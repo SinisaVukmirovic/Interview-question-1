@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jobs FWW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <div class="side">
+            <h2 id="numbers-drawn-headline">Numbers Drawn:</h2>
+            <section id="numbers-drawn" class="numbs"></section>
+
+            <h2 id="tickets-headline">Your Tickets:</h2>
+            <section id="tickets"></section>
+
+            <div id="betting-results"></div>
+        </div>
+
+        <div class="side">
+            <h2>Choose between 1 and 5 numbers:</h2>
+            <section id="numbers" class="numbs"></section>
+
+            <form action="">
+                <label for="bet-amount">Bet Amount<span>( 10 - 100 )</span>:</label>
+                <input id="bet-amount" type="number" min="10" max="100" step="10" value="10">
+                <span class="credit">credits.</span>
+                <h3>Total credits: <span id="current-credits">1000</span></h3>
+            </form>
+            
+            <section class="control-buttons">
+                <button id="add-ticket-btn" class="btn">Add Ticket</button>
+                <button id="start-draw-btn" class="btn">Start Draw</button>
+                <button id="play-again-btn" class="btn">Play Again?</button>
+            </section>
+        </div>
+    </main>   
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Gruppo&display=swap');
+
+:root {
+    --bg-color: #02605f;
+    --theme-color: #fee96c;
+    --shadows: 2px 2px 10px #111;
+    --numbers-color: #d23c48;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg-color);
+    font-family: 'Gruppo', cursive,  sans-serif;
+    font-weight: 900;
+    color: var(--theme-color);
+}
+
+/* GENERAL ELEMENTS STYLES */
+main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5rem auto;
+    width: fit-content;
+}
+    main .side {
+        margin: 0 2em;
+        display: flex;
+        flex-direction: column;
+    }
+    main h2 {
+        margin-left: 1em;
+    }
+
+section {
+    margin: .5em 0 2em;
+}
+
+.numbs {
+    display: grid;
+    grid-gap: 1em;
+}
+
+.numbs span {
+    background: var(--numbers-color);
+    box-shadow: var(--shadows);
+    color: #eee;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    user-select: none;
+    transition: all .25s;
+}
+
+#numbers.numbs span {
+    cursor: pointer;
+}
+#numbers.numbs span:hover {
+    transform: scale(1.1);
+    opacity: .8;
+}
+
+.btn {
+    display: block;
+    background: var(--theme-color);
+    box-shadow: var(--shadows);
+    border: none;
+    outline: none;
+    user-select: none;
+    width: 100%;
+    font-family: 'Gruppo', cursive,  sans-serif;
+    font-weight: 900;
+    font-size: 1.75rem;
+    color: #333;
+    text-transform: uppercase;
+    margin: 1em auto;
+    padding: .5em;
+    cursor: pointer;
+    transition: transform .25s;
+}
+    .btn:active {
+        transform: scale(.99);
+    }
+    .btn:hover {
+        opacity: .9;
+    }
+
+/* DRAWN NUMBERS SECTION STYLES */
+#numbers-drawn {
+    grid-template-columns: repeat(6, 3rem);
+    grid-auto-rows: 3rem;
+    min-height: 9em;
+    width: fit-content;
+    margin: .5em auto 2em;
+    padding: .5em;
+    border: .5rem solid var(--theme-color);
+}
+    #numbers-drawn span {
+        background: var(--theme-color);
+        border: none;
+        box-shadow: none;
+        color: #000;
+    }
+
+/* TICKETS SECTION STYLES */
+#tickets {
+    display: flex;
+    flex-direction: column;
+}
+    #tickets .ticket {
+        grid-template-columns: repeat(5, 2.5rem);
+        grid-auto-rows: 2.5rem;
+        margin: .25em 0;
+        padding: .5em;
+        border: 2px solid var(--theme-color);
+    }
+        #tickets .ticket span {
+            font-size: 1.5rem;
+            color: var(--theme-color);
+            border: 2px solid var(--theme-color);
+            box-shadow: none;
+        }
+
+/* style classes for win/lose STATUS */
+.js-won {
+    position: relative;
+    background: linear-gradient(to right, transparent, lime) !important;
+}
+.js-lost {
+    position: relative;
+    background: linear-gradient(to right, transparent, crimson) !important;
+}
+    .js-won::after, .js-lost::after {
+        position: absolute;
+        top: 50%; right: .5em;
+        transform: translateY(-50%);
+        color: #fff;
+        font-size: 1.75rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .js-won::after {
+        content: 'Won!';
+        color: #333;
+    }
+    .js-lost::after {
+        content: 'Lost!';
+    }
+
+#betting-results {
+    font-size: 1.5rem;
+}
+
+/* NUMBERS SECTION STYLES */
+#numbers {
+    grid-template-columns: repeat(6, 3.5rem);
+    grid-auto-rows: 3.5rem;
+    padding: 1.5em;
+    box-shadow: var(--shadows);
+}
+    #numbers span {
+        background: var(--numbers-color);
+        box-shadow: var(--shadows);
+        color: #fff;
+    }
+
+.js-selected {
+    opacity: .6;
+    transform: scale(.99);
+    pointer-events: none;
+}
+
+/* BET AMOUNT INPUT STYLES */
+label {
+    color: var(--theme-color);
+    font-size: 1.5rem;
+}
+    label span {
+        font-size: 1.25rem;
+        margin: 0 .25em;
+    }
+
+input#bet-amount {
+    width: 5.5rem;
+    outline: none;
+    border: 2px solid var(--theme-color);
+    border-radius: .25em;
+    background: transparent;
+    margin: 0 .25em .5em;
+    padding: .15em .25em .15em .5em;
+    font-size: 1.75rem;
+    color: #eee;
+    font-family: 'Gruppo', cursive,  sans-serif;
+    font-weight: 900;
+}
+    input#bet-amount::placeholder {
+        color: var(--theme-color);
+        font-size: 1.25rem;
+    }
+    span.credit {
+        color: var(--theme-color);
+        font-size: 1.5rem;
+    }
+
+#start-draw-btn {
+    display: none;
+    padding: 1.25em;
+}
+
+#play-again-btn {
+    display: none;
+    padding: 2em;
+}
+
+/* SCROLL BAR STYLE */
+::-webkit-scrollbar {
+    width: 5px;
+    background: var(--theme-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--numbers-color); 
+}
+
+/* MEDIA QUERIES FOR SMALLER SCREEN SIZES */
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 14px;
+    }
+    main .side {
+        margin: 0 1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+    main .side {
+        margin: 0 1em;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    html {
+        font-size: 10px;
+    }
+    main {
+        flex-direction: column;
+        margin: 2em auto;
+    }
+        main .side:first-child {
+            order: 2;
+        }
+        main .side:last-child {
+            order: 1;
+        }
+}
