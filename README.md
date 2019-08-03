@@ -2,7 +2,7 @@
 "Hardest thing in programming is naming things!"
 ___
 
-#### interview Question - *build a* **"Luck Game"**
+#### interview Question - build a "Luck Game"
 
 **Game** should have 4 *sections*
 
