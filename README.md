@@ -36,6 +36,9 @@ Adter the draw is finished, the winning tickets are colored in green, and losing
 Add "Cash in", "Cash Out and "Odds" (arbitrarily odds) functionality
 ___
 
+Can you believe this happened during building and testing stage?
+![Image] 
+(https://raw.githubusercontent.com/SinisaVukmirovic/Jobs-FWW/master/can-you-believe.jpg)
 
 
 
