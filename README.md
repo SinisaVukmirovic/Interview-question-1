@@ -1,5 +1,5 @@
 # Jobs-FWW
-"Hardest thing in programming is naming things!"
+*"Hardest thing in programming is naming things!"*
 ___
 
 #### interview Question - build a "Luck Game"
@@ -13,7 +13,7 @@ ___
 
 ##### **1. Section** with numbers to pick
 Should contain awailable numbers to pick, ranging from 1 to 30.     
-Minimum of picked numbers is 1, maximum of picked is 5.     
+Minimum of picked numbers is 1, maximum of picked numbers is 5.     
 Picked numbers should be colored differently.
 
 ##### **2. Section** with control buttons
@@ -29,7 +29,8 @@ Drawn numbers appear one by one, 2 seconds appart.
 After the draw is finished, win/lost status of tickets should be displayed in the *tickets section*.
 
 ##### **4. Section** for played tickets
-In this section, ticket appears after click on *"Add Ticket"* button.     
+In this section, ticket appears after click on *"Add Ticket"* button.    
+Player must play 5 tickets.
 Adter the draw is finished, the winning tickets are colored in green, and losing tickets in red color.
 
 ##### BONUS task
