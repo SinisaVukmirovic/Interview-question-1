@@ -9,7 +9,7 @@ ___
 1. Section with numbers to pick
 2. Section with control buttons
 3. Section for drawn numbers
-4. Seaction for played tickets
+4. Section for played tickets
 
 ###### **1. Section** with numbers to pick
 Should contain awailable numbers to pick, ranging from 1 to 30
