@@ -23,8 +23,8 @@ After that, the *drawing of numbers* beggins.
 
 ##### **3. Section** with drawn numbers
 In this section, the drawn numbers appear.     
-If each draw, 12 numbers are drawn.     
-Draw begins after the *"Play"* is clicked.    
+In each draw, 12 numbers are drawn.     
+Draw begins after the *"Play"* button is clicked.    
 Drawn numbers appear one by one, 2 seconds appart.     
 After the draw is finished, win/lost status of tickets should be displayed in the *tickets section*.
 
