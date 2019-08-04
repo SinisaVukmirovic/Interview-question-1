@@ -31,7 +31,7 @@ After the draw is finished, win/lost status of tickets should be displayed in th
 ##### **4. Section** for played tickets
 In this section, ticket appears after click on *"Add Ticket"* button.    
 Player must play 5 tickets.
-Adter the draw is finished, the winning tickets are colored in green, and losing tickets in red color.
+When the draw is finished, the winning tickets are colored in green, and losing tickets in red color.
 
 ##### BONUS task
 Add "Cash in", "Cash Out and "Odds" (arbitrarily odds) functionality
